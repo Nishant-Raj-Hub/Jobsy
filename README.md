@@ -14,7 +14,7 @@ The backend is deployed on Render.com, which pauses the server after 15 minutes 
 
 ## Deployed link
 -backend: https://jobsy-syac.onrender.com/
--frontend: 
+-frontend: https://jobsy-vert.vercel.app/
 
 ## Tech Stack
 
