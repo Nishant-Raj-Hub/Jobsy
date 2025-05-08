@@ -1,7 +1,7 @@
 import axios from 'axios';
 import type { Job } from '../types';
 
-const API_URL = 'http://localhost:5000/api';
+const API_URL = 'https://jobsy-syac.onrender.com/api';
 
 interface JobsResponse {
   jobs: Job[];
@@ -12,8 +12,8 @@ interface JobsResponse {
 export const fetchJobs = async (page: number, limit: number, location?: string): Promise<JobsResponse> => {
   try {
     const url = location 
-      ? `http://localhost:5000/api/jobs?page=${page}&limit=${limit}&location=${location}`
-      : `http://localhost:5000/api/jobs?page=${page}&limit=${limit}`;
+      ? `https://jobsy-syac.onrender.com/api/jobs?page=${page}&limit=${limit}&location=${location}`
+      : `https://jobsy-syac.onrender.com/api/jobs?page=${page}&limit=${limit}`;
       
     const response = await axios.get<JobsResponse>(url, {
       headers: {

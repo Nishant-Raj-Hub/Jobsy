@@ -8,6 +8,14 @@ A full-stack application built with React and Express that allows users to brows
 - View detailed information about each job posting
 - RESTful API for job data
 
+## NOTE
+The backend is deployed on Render.com, which pauses the server after 15 minutes of inactivity. As a result, the initial request may take 1 to 1.5 minutes to respond.
+
+
+## Deployed link
+-backend: https://jobsy-syac.onrender.com/
+-frontend: 
+
 ## Tech Stack
 
 ### Frontend
@@ -61,15 +69,12 @@ A full-stack application built with React and Express that allows users to brows
 
 #### 1. Clone the repository
 
-```bash
-git clone https://github.com/yourusername/job-listing-app.git
-cd job-listing-app
-```
+clone from github
 
 #### 2. Backend Setup
 
 ```bash
-cd backend
+cd server
 npm install
 ```
 
@@ -87,7 +92,7 @@ The API will be available at `http://localhost:5000`.
 #### 3. Frontend Setup
 
 ```bash
-cd ../frontend
+cd client
 npm install
 
 ```
